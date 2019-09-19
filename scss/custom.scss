@@ -1,5 +1,76 @@
+// Defining colours.
+$custom-theme-pink: #EC576A;
+$custom-theme-aqua: #4EC5C2;
+$custom-theme-lime: #E5E339; 
+
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+// Using coloures to define theme.
 $theme-colors: (
-  "pink": #EC576A,
+  "primary": $pink,
+  "secondary": $teal,
+  "light": $gray-200,
+  "dark": $gray-900,
+  "nav": $indigo
 );
 
+// Load required Bootstrap files. They will use theme.
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$body-bg: $gray-100;
+$enable-gradients: true;
+
+// Load the rest of Bootstrap.
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+// Override CSS.
+
+// Custom CSS Grid on the "About Me" page.
+@mixin bio-middle-column {
+  grid-column: 2 / span 2;
+}
+.bio {
+  display: grid;
+  grid-template-columns: 25% auto auto 25%;
+
+  > h2 { @include bio-middle-column() }
+  > p { @include bio-middle-column() }
+  > * {margin: $spacer * 0.5}
+}
+
+// TODO: Use breakpoints to re-arrange elements:
+// @include media-breakpoint-up(sm) {
+//   .bio {
+//     no grid at all
+//   }
+// }
+
+// @include media-breakpoint-up(md) {
+//   .bio {
+//     ...
+//   }
+// }
+
+// @include media-breakpoint-up(lg) {
+//   .bio {
+//     ...
+//   }
+// }
