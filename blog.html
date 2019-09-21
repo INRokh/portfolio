@@ -1,86 +1,81 @@
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <title>Portfolio Nina Rokh</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="info.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        <header class="jumbotron text-center">
-            <h1>Blog</h1>
-        </header>
-        <div class="con">
-            <div class="r">
-                <div class="c">
-                    <div class="blog-post">
-                        <h2 class="title">Portfolio website</h2>
-                        <p class="meta">September 19, 2019</p>
-                        <img src="images/portfolio.png" alt="Portfolio image"/>
-                        <p>
-                            Hello world!
-                        </p>
-                        <p>
-                            This is a post about this very site. This is a part of the training in the CoderAcademy sowing some seeds for a fully fledged portfolio. 
-                            This is also the first site I am working on for real. The start was rough - even though HTML5 and CSS3 are easy to learn, making something which was not ugly was really hard for me. After a day of flexing divs around I decided to use a framework. I considered Bootstrap and Material Design, the latter looked too ephemeral and scary.
-                        </p>
-                        <p>
-                            Next day I got something which was not ugly and I was really happy with the amount of code it required. 
-                            The page did not put you into aesthetic coma any more, but did not stand out either. 
-                            I decided to change theme. Being very bad at Graphic Design, I searched for “colour schemes for web-sites” and got a bunch of results. 
-                            This part was easy. On the contrary, changing theme in Bootstrap was not easy, tweaking the styles with my own kept exploding bringing the site to the previous levels of ugliness.
-                        </p>
-                        <p>
-                            I had to make it right - to add extra colours to the theme and to re-compile Bootstrap CSS file. 
-                            Again I didn’t work with Node.js and corresponding packet manager before, so it took a lot of time to figure out, but I could generate the CSS at the end. 
-                            It was not minimized, but that was just good enough. This took me another day.
-                        </p>
-                        <p>
-                            When I was too angry about documentation or weather to learn new stuff I was working on demos of the two humble apps I had written before. 
-                            I needed to record the demos and to convert them into gifs making them pleasantly looking. 
-                            This was not as simple as I expected as I needed to make the demos short and crisp.
-                            I spent another day writing blog posts and adding content, overriding styles and recompiling Bootstrap. 
-                            There was an enormous number of small things to add and to fix. 
-                            HTML code duplication started to annoy me a lot - I kept forgetting to update things in all places they were used. I also didn’t enjoy typing tags, so I used Hugo to generate web pages from templates.
-                        </p>
-                        </p>
-                            Now it’s time to polish the site a little bit more and publish it.  
-                        </p>
-                    </div>
-                </div>
-                <div class="r">
-                    <div class="blog-post">
-                        <h2 class="title">imdb ratings</h2>
-                        <p class="meta">January 1, 2014</p>
-                    </div>
-                </div>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/custom.css" crossorigin="anonymous">
+    <title>Portfolio Nina Rokh</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html">Contact</a>
+                </li>
+            </ul>
         </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+    </nav>
+    <header class="jumbotron text-center bg-gradient-primary text-white">
+        <h1>Blog</h1>
+    </header>
+    <div class="container">
+        <div class="card blog-post">
+            <img src="images/hello.png" class="card-img-top" alt="Three baby plants." />
+            <div class="card-body">
+                <h2 class="blog-post-title">Hello, world!</h2>
+                <p class="blog-post-meta">September 19, 2019</p>
+                <p>
+                    Making sites is hard. In this post I am writing about my experience: how I started with
+                    plain HTML5/CSS3, then switched to Bootstrap and fall deep down the rabbit hole.
+                </p>
+                <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+        </div>
+        <div class="card blog-post">
+            <img src="images/space.png" class="card-img-top" alt="Three baby plants." />
+            <div class="card-body">
+                <h2 class="blog-post-title">Hello, world!</h2>
+                <p class="blog-post-meta">September 19, 2019</p>
+                <p>
+                    Making sites is hard. In this post I am writing about my experience: how I started with
+                    plain HTML5/CSS3, then switched to Bootstrap and fall deep down the rabbit hole.
+                </p>
+                <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+        </div>
+    </div>
+    <footer class="container">
+        <hr>
+        <p class="float-right"><a href="https://github.com/INRokh">GitHub</a> &middot; <a
+                href="https://www.linkedin.com/in/nina-rokhatova/">LinkedIn</a></p>
+        <p>&copy; 2019 Nina Rokh</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
 </html>
