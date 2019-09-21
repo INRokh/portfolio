@@ -1,0 +1,6 @@
+# All styles are generated from scss files. 
+css/*
+# Bootstrap dependencies.
+node_modules/*
+# MacOS Finder files.
+.DS_Store
