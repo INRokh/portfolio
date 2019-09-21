@@ -21,7 +21,7 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-// Using coloures to define theme.
+// Using colours to define theme.
 $theme-colors: (
   "primary": $pink,
   "secondary": $teal,
@@ -35,7 +35,9 @@ $theme-colors: (
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
+// Change background colour. 
 $body-bg: $gray-100;
+// Enable support of gradient colours.
 $enable-gradients: true;
 
 // Load the rest of Bootstrap.
@@ -44,33 +46,34 @@ $enable-gradients: true;
 // Override CSS.
 
 // Custom CSS Grid on the "About Me" page.
+// @mixin - mixins allow you to define styles that can be re-used throughout your stylesheet.
 @mixin bio-middle-column {
-  grid-column: 2 / span 2;
+  grid-column: 2;
 }
+// Grid for bio.
 .bio {
   display: grid;
-  grid-template-columns: 25% auto auto 25%;
+  grid-template-columns: 25% 50% 25%;
 
+  .tracking-image {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  // > - apply to immediate children.
   > h2 { @include bio-middle-column() }
   > p { @include bio-middle-column() }
-  > * {margin: $spacer * 0.5}
+  > * { margin: $spacer * 0.5 }
 }
 
-// TODO: Use breakpoints to re-arrange elements:
-// @include media-breakpoint-up(sm) {
-//   .bio {
-//     no grid at all
-//   }
-// }
+@include media-breakpoint-down(sm) {
+  .bio {
+    display: block;
+  }
+}
 
-// @include media-breakpoint-up(md) {
-//   .bio {
-//     ...
-//   }
-// }
+hr {
+  margin-top: $spacer * 3;
+}
 
-// @include media-breakpoint-up(lg) {
-//   .bio {
-//     ...
-//   }
-// }
+
+
