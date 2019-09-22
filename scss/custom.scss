@@ -61,12 +61,16 @@ $enable-responsive-font-sizes: true;
     grid-column: 1;
     grid-row: 3;
   }
+
+  .hiking-photo {
+    @include bio-middle-column()
+  }
   // > - apply to immediate children.
-  > h1 { @include bio-middle-column() }
+  > h2 { @include bio-middle-column() }
   > p { @include bio-middle-column() }
   > * { margin: $spacer * 0.5 }
 }
-
+// Disable grid on small screens.
 @include media-breakpoint-down(sm) {
   .bio {
     display: block;
@@ -82,6 +86,7 @@ hr {
   border-radius: 0;
 }
 
+// Block of links to social nets.
 .social {
   font-size: $h4-font-size;
   li {
@@ -95,6 +100,5 @@ hr {
   font-size: $h4-font-size;
   li {
     padding: $spacer * 0.5;
-   
   }
 }
