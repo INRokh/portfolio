@@ -1,6 +1,9 @@
 # In Action #
-A link (URL) to your published portfolio website
-A link to your GitHub repository (repo)
+[Demo](https://inrokh.github.io/)
+
+[Source](https://github.com/INRokh/portfolio)
+
+[Trello board](https://trello.com/b/cGqcM2A3/portfolio-site)
 
 # About #
 
@@ -72,4 +75,13 @@ Start service that re-compiles css every time scss is modified:
 Use the contents of the folder `css` for deployment.
 
 ## Upload ##
-TBD
+
+The site is uploaded to GitHub Pages:
+
+1. Run compile.sh to build CSS and generate integrity checksum.
+1. Clone the repository ` inrokh.github.io ` 
+1. Copy all HTML files to the Pages repository.
+1. Copy CSS files to the Pages repository.
+1. Update the HTML file code with the CSS file integrity checksums.
+1. Finally, copy all media and other static files needed by the site.
+1. Add, commit, and push your changes.
