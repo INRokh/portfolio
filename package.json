@@ -4,6 +4,7 @@
     "node-sass": "^4.12.0"
   },
   "scripts": {
-    "scss": "node-sass --watch scss -o css"
+    "scss": "node-sass --watch scss -o css",
+    "scss-compile": "node-sass scss -o css"
   }
 }
