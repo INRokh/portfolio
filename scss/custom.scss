@@ -39,6 +39,8 @@ $theme-colors: (
 $body-bg: $gray-100;
 // Enable support of gradient colours.
 $enable-gradients: true;
+// Enable different font sizes for different screen sizes.
+$enable-responsive-font-sizes: true;
 
 // Load the rest of Bootstrap.
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -60,7 +62,7 @@ $enable-gradients: true;
     grid-row: 3;
   }
   // > - apply to immediate children.
-  > h2 { @include bio-middle-column() }
+  > h1 { @include bio-middle-column() }
   > p { @include bio-middle-column() }
   > * { margin: $spacer * 0.5 }
 }
@@ -75,8 +77,24 @@ hr {
   margin-top: $spacer * 3;
 }
 
-.blog-post {
+.card {
   margin-bottom: $spacer * 2;
+  border-radius: 0;
 }
 
+.social {
+  font-size: $h4-font-size;
+  li {
+    display: inline-flex;
+    flex-direction: row;
+    padding: $spacer;
+  }
+}
 
+.skills {
+  font-size: $h4-font-size;
+  li {
+    padding: $spacer * 0.5;
+   
+  }
+}
